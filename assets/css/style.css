@@ -1,0 +1,200 @@
+body {
+    
+    background-color: #000000;
+    border-color: #dddddd;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:#FFF;
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+
+}
+
+ header {
+    background-image: none;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    margin: auto;
+    overflow: auto;
+    clear: both;
+    width: 960px;
+    height: auto;
+       }
+
+  .header_nav {
+      float: right; 
+         
+  }
+
+ 
+
+footer {
+    
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #FFF;
+    border-top: 5px solid #dddddd;
+   
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    float:center;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    
+            
+}
+
+h2 {
+    color:#2be7de;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 20px;
+    
+    text-align:center;
+    }
+
+
+    
+
+p {
+    color: black;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+span {
+    color: white;
+    margin-left: 10px;
+    
+}
+
+td {
+    height: 20px;
+}
+
+#reset_button{
+    float: right;
+}
+
+.header_links {
+    
+    display: inline-block;
+    padding: 20px 10px 5px 10px;
+    color:#777777;
+    text-decoration: none;
+    
+   
+}
+
+
+.content-background {
+   
+    border-top: 2px solid #dddddd;
+    padding: 20px; 50px 50px 50px;
+         }
+
+.content {
+
+   
+   
+    width: 960px;
+   
+    padding: 15px;
+    margin: auto;
+    
+    
+}
+
+   
+ .available_character {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 15px;
+    height: 200px;
+    width: 175px;
+    border: 1px solid #e9dbdb;
+    display: inline-block;
+    text-align: center;
+    }
+
+    .selected_character {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-color: white;
+        margin: 15px;
+        height: 200px;
+        width: 175px;
+        border: 1px solid #e9dbdb;
+        display: inline-block;
+        text-align: center;
+        }
+
+.available_enemy {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-color: white;
+        margin: 15px;
+        height: 200px;
+        width: 175px;
+        border: 1px solid #e9dbdb;
+        display: inline-block;
+        text-align: center;
+        }
+
+
+        .opponent {
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-color: white;
+            margin: 15px;
+            height: 200px;
+            width: 175px;
+            border: 1px solid #e9dbdb;
+            display: inline-block;
+            text-align: center;
+            }
+
+
+
+ .character a {
+        background-color: #4aaaa5;
+        color: white;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        margin: 0px;
+        text-decoration: none;
+        display: inline-block;
+        height: 30px;
+        width: 250px;
+        margin-top: 140px;
+        padding-top: 2px;
+        
+            }
+    
+.submit {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 10px 0px; 10px 0px; 
+}
+
+.button_hidden{
+    visibility: hidden;
+}
+
+.button_visible {
+    visibility: visible;
+    }
+
+    
+    .section_header_hidden{
+        visibility: hidden;
+    }
+
+    .section_header_visible{
+        visibility: visible;
+    } 
