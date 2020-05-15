@@ -9,8 +9,15 @@ var Images = {
     Images.ApiSearch(Images.strTextInput);
   },
 
+  SaveToStitch: function (index) {
+    console.log('savetostitch');
+    $(this).removeClass();
+    $(this).addClass("selected_gif");
+    $(this).appendTo(".saved_gif_section");
+  },
 
   ApiSearch: function (search_term) {
+    $('.returned_gif_section').empty();
     var restCall = 'https://api.giphy.com/v1/gifs/search';
     console.log("call attempted");
 
@@ -19,33 +26,31 @@ var Images = {
       data: {
         'api_key': 'rDQXG5no36qCzCRBgyF8udasAaiPvRA1',
         'q': search_term,
+        'limit': 10
       },
       success: function (SearchResponse) {
-        // console.log(restCall)
-        console.log(SearchResponse.data[0]);
-        var GIF_URL = SearchResponse.data[0].images.downsized.url
-        console.log(GIF_URL);
-
-        $('.returned_gif').empty().append("<img src = '" + GIF_URL + "'>");
-
+        $('.returned_gif_section').empty
+        var i = 0;
+        for (i = 0; i < SearchResponse.data.length; i++) {
+          var GIF_URL = SearchResponse.data[i].images.downsized.url
+          $('.returned_gif_section').append("<div class='returned_gif'><img src ='" + GIF_URL + "'></div>");
+        }
       },
       error: function () {
-
         console.log('Error')
         return false;
       }
-
     })
   }
-
 };
 
 
 
 $(document).ready(function () {
-  
+
   console.log("page loaded");
   $("#search_button").on("click", Images.TextInput);
+  $(".returned_gif_section").on('click', '.returned_gif', Images.SaveToStitch);
 
 
 });
