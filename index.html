@@ -16,19 +16,17 @@
            
            <h2>GIF Search</h2>
            
-            <table>
-                <th></th>
+            <table id ='gif_search'>
+                <th><input type='text' id='search'> <button id='search_button'>Search</button></th>
+                
                 <tr>
-                   
-                   <td class ='search_options'></td>
-                   <td><input type='text' id='search'> <button id='search_button'>Search</button></td>
-                </tr>
-                <tr>
-                   <td>Click Search Result to Add to Stitch</td>
+                   <td id='instructions_label' class='section_header_hidden'>Click Search Result to Add to Stitch</td>
                     <td class ='returned_gif_section'></td>
                 </tr>
-                <tr>
-                    <td>Your Stitch</td>
+                <tr id='your_stitch_section' class='section_header_hidden'>
+                    <p>Your Stitch</p> 
+                    <td><button id='display_stitch_button'>Display Sitch</button></td>
+                    <td><input type='text' id='stitch_name'> <button id='save_stitch'>Save</button></td>
                 </tr>
                 <tr>
                     <td class="saved_gif_section"></td>
