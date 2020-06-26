@@ -73,7 +73,7 @@ var Images = {
       data: {
         'api_key': 'rDQXG5no36qCzCRBgyF8udasAaiPvRA1',
         'q': search_term,
-        'limit': 12
+        'limit': 10
       },
       success: function (SearchResponse) {
         Images.returned_GIF_URLs = [];
