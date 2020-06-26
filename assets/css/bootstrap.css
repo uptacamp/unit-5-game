@@ -615,7 +615,6 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  text-align: center;
 }
 
 .col {
@@ -627,14 +626,10 @@ pre code {
 }
 
 .col-auto {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
- 
-  text-align: center;
-  height: 150px;
-  font-size: 50;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
 }
 
 .col-1 {
