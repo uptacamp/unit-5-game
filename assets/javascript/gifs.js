@@ -14,10 +14,6 @@ var Images = {
 
   DisplaySearchResults: function (item, index){
    // $('.returned_gif_section').append("<td class='returned_gif' id='" + item + "'><img src ='" + item + "' id='"+ index +"'></td>");
- 
- 
- 
- //$('.returned_gif_section').append("<div class='card mb-4 shadow-sm'>")
 
  $('.returned_gif_section').append("<svg class='returned_gif' width='200' height='200'><image href ='" + item + "' id='"+ index +"' /></svg>") 
 
@@ -73,7 +69,7 @@ var Images = {
       data: {
         'api_key': 'rDQXG5no36qCzCRBgyF8udasAaiPvRA1',
         'q': search_term,
-        'limit': 10
+        'limit': 12
       },
       success: function (SearchResponse) {
         Images.returned_GIF_URLs = [];
